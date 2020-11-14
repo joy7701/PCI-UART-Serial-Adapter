@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : e3_drc.vf
+// /___/   /\     Timestamp : 05/26/2019 16:13:53
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog e3_drc.vf -w C:/Users/1/Documents/Xilinx/PCI-UART/e3.sch
+//Design Name: e3
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module e3();
+
+   
+   wire [31:0] XLXN_2;
+   
+   pci  XLXI_1 (.cbe(), 
+               .clk(), 
+               .frame(), 
+               .idsel(), 
+               .irdy(), 
+               .reset(), 
+               .devsel(), 
+               .enable_transaction(), 
+               .inta(), 
+               .led_out(), 
+               .stop(), 
+               .trdy(), 
+               .ad(XLXN_2[31:0]), 
+               .par());
+   tristate_buffer  XLXI_2 (.enable(), 
+                           .in_data(XLXN_2[31:0]), 
+                           .parities(), 
+                           .start_bits(), 
+                           .stop_bits(), 
+                           .out_data());
+   SRLC32E #( .INIT(32'h00000000) ) XLXI_6 (.A(), 
+                   .CE(), 
+                   .CLK(), 
+                   .D(), 
+                   .Q(), 
+                   .Q31());
+endmodule

@@ -1,0 +1,703 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.53 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.55 secs
+ 
+--> Reading design: e3.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "e3.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "e3"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-ftg256
+
+---- Source Options
+Top Module Name                    : e3
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\1\Documents\Xilinx\PCI-UART\z-statebuffer-44bit.v" into library work
+Parsing module <tristate_buffer>.
+Analyzing Verilog file "C:\Users\1\Documents\Xilinx\PCI-UART\shift-regiser44bits.v" into library work
+Parsing module <shift_regiser44bits>.
+WARNING:HDLCompiler:98 - "C:\Users\1\Documents\Xilinx\PCI-UART\shift-regiser44bits.v" Line 14: workload was previously declared with a range
+Analyzing Verilog file "C:\Users\1\Documents\Xilinx\PCI-UART\PCI-CORE.v" into library work
+Parsing module <pci>.
+Analyzing Verilog file "C:\Users\1\Documents\Xilinx\PCI-UART\Parity.v" into library work
+Parsing module <Parity>.
+Analyzing Verilog file "C:\Users\1\Documents\Xilinx\PCI-UART\Comparator.v" into library work
+Parsing module <Comparator>.
+Analyzing Verilog file "C:\Users\1\Documents\Xilinx\PCI-UART\e3.vf" into library work
+Parsing module <e3>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <e3>.
+
+Elaborating module <pci>.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\PCI-CORE.v" Line 65: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\PCI-CORE.v" Line 66: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\PCI-CORE.v" Line 82: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\PCI-CORE.v" Line 93: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\PCI-CORE.v" Line 111: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\PCI-CORE.v" Line 129: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\PCI-CORE.v" Line 146: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\PCI-CORE.v" Line 164: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\PCI-CORE.v" Line 182: Result of 7-bit expression is truncated to fit in 6-bit target.
+
+Elaborating module <tristate_buffer>.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\z-statebuffer-44bit.v" Line 18: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\z-statebuffer-44bit.v" Line 19: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\z-statebuffer-44bit.v" Line 20: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\z-statebuffer-44bit.v" Line 21: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\z-statebuffer-44bit.v" Line 24: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\z-statebuffer-44bit.v" Line 25: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\z-statebuffer-44bit.v" Line 26: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\z-statebuffer-44bit.v" Line 27: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\z-statebuffer-44bit.v" Line 30: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\z-statebuffer-44bit.v" Line 31: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\z-statebuffer-44bit.v" Line 32: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\z-statebuffer-44bit.v" Line 33: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\z-statebuffer-44bit.v" Line 36: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\z-statebuffer-44bit.v" Line 37: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\z-statebuffer-44bit.v" Line 38: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\z-statebuffer-44bit.v" Line 39: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <Parity>.
+
+Elaborating module <shift_regiser44bits>.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\shift-regiser44bits.v" Line 16: Result of 6-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\1\Documents\Xilinx\PCI-UART\shift-regiser44bits.v" Line 29: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:189 - "C:\Users\1\Documents\Xilinx\PCI-UART\e3.vf" Line 89: Size mismatch in connection of port <workload>. Formal port size is 1-bit while actual signal size is 6-bit.
+
+Elaborating module <Comparator>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <e3>.
+    Related source file is "C:\Users\1\Documents\Xilinx\PCI-UART\e3.vf".
+    Summary:
+	no macro.
+Unit <e3> synthesized.
+
+Synthesizing Unit <pci>.
+    Related source file is "C:\Users\1\Documents\Xilinx\PCI-UART\PCI-CORE.v".
+        DEVICE_ID = 16'b1001010100000000
+        VENDOR_ID = 16'b0001000001101101
+        DEVICE_CLASS = 24'b111111110000000000000000
+        DEVICE_REV = 8'b00000001
+        SUBSYSTEM_ID = 16'b0000000000000001
+        SUBSYSTEM_VENDOR_ID = 16'b1011111010111110
+        DEVSEL_TIMING = 2'b00
+        EN_NONE = 0
+        EN_RD = 1
+        EN_WR = 2
+        EN_TR = 3
+        ST_IDLE = 3'b000
+        ST_BUSY = 3'b010
+        ST_MEMREAD = 3'b100
+        ST_MEMWRITE = 3'b101
+        ST_CFGREAD = 3'b110
+        ST_CFGWRITE = 3'b111
+        MEMREAD = 4'b0110
+        MEMWRITE = 4'b0111
+        CFGREAD = 4'b1010
+        CFGWRITE = 4'b1011
+WARNING:Xst:653 - Signal <enable_transaction> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 2-bit register for signal <enable>.
+    Found 8-bit register for signal <baseaddr>.
+    Found 1-bit register for signal <state[2]_clk_DFF_14_q>.
+    Found 1-bit register for signal <reset_clk_DFF_15>.
+    Found 1-bit register for signal <memen>.
+    Found 4-bit register for signal <led>.
+    Found 6-bit register for signal <address>.
+    Found 32-bit register for signal <data>.
+    Found 3-bit register for signal <state>.
+    Found 6-bit adder for signal <address[5]_GND_2_o_add_40_OUT> created at line 146.
+    Found 8x1-bit Read Only RAM for signal <state[2]_devsel_Mux_67_o>
+    Found 1-bit tristate buffer for signal <ad<31>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<30>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<29>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<28>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<27>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<26>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<25>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<24>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<23>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<22>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<21>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<20>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<19>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<18>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<17>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<16>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<15>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<14>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<13>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<12>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<11>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<10>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<9>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<8>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<7>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<6>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<5>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<4>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<3>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<2>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<1>> created at line 64
+    Found 1-bit tristate buffer for signal <ad<0>> created at line 64
+    Found 1-bit tristate buffer for signal <trdy> created at line 65
+    Found 1-bit tristate buffer for signal <par> created at line 66
+    Found 1-bit tristate buffer for signal <stop> created at line 69
+    Found 1-bit tristate buffer for signal <inta> created at line 70
+    Found 1-bit tristate buffer for signal <devsel> created at line 76
+    Found 20-bit comparator equal for signal <ad[31]_GND_2_o_equal_15_o> created at line 73
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  58 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  23 Multiplexer(s).
+	inferred  37 Tristate(s).
+Unit <pci> synthesized.
+
+Synthesizing Unit <tristate_buffer>.
+    Related source file is "C:\Users\1\Documents\Xilinx\PCI-UART\z-statebuffer-44bit.v".
+WARNING:Xst:647 - Input <in_data<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <start_bits<3:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <stop_bits<3:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <parities<3:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit tristate buffer for signal <out_data<0>> created at line 18
+    Found 1-bit tristate buffer for signal <out_data<8>> created at line 19
+    Found 1-bit tristate buffer for signal <out_data<7>> created at line 19
+    Found 1-bit tristate buffer for signal <out_data<6>> created at line 19
+    Found 1-bit tristate buffer for signal <out_data<5>> created at line 19
+    Found 1-bit tristate buffer for signal <out_data<4>> created at line 19
+    Found 1-bit tristate buffer for signal <out_data<3>> created at line 19
+    Found 1-bit tristate buffer for signal <out_data<2>> created at line 19
+    Found 1-bit tristate buffer for signal <out_data<1>> created at line 19
+    Found 1-bit tristate buffer for signal <out_data<9>> created at line 20
+    Found 1-bit tristate buffer for signal <out_data<10>> created at line 21
+    Found 1-bit tristate buffer for signal <out_data<11>> created at line 24
+    Found 1-bit tristate buffer for signal <out_data<19>> created at line 25
+    Found 1-bit tristate buffer for signal <out_data<18>> created at line 25
+    Found 1-bit tristate buffer for signal <out_data<17>> created at line 25
+    Found 1-bit tristate buffer for signal <out_data<16>> created at line 25
+    Found 1-bit tristate buffer for signal <out_data<15>> created at line 25
+    Found 1-bit tristate buffer for signal <out_data<14>> created at line 25
+    Found 1-bit tristate buffer for signal <out_data<13>> created at line 25
+    Found 1-bit tristate buffer for signal <out_data<12>> created at line 25
+    Found 1-bit tristate buffer for signal <out_data<20>> created at line 26
+    Found 1-bit tristate buffer for signal <out_data<21>> created at line 27
+    Found 1-bit tristate buffer for signal <out_data<22>> created at line 30
+    Found 1-bit tristate buffer for signal <out_data<30>> created at line 31
+    Found 1-bit tristate buffer for signal <out_data<29>> created at line 31
+    Found 1-bit tristate buffer for signal <out_data<28>> created at line 31
+    Found 1-bit tristate buffer for signal <out_data<27>> created at line 31
+    Found 1-bit tristate buffer for signal <out_data<26>> created at line 31
+    Found 1-bit tristate buffer for signal <out_data<25>> created at line 31
+    Found 1-bit tristate buffer for signal <out_data<24>> created at line 31
+    Found 1-bit tristate buffer for signal <out_data<23>> created at line 31
+    Found 1-bit tristate buffer for signal <out_data<31>> created at line 32
+    Found 1-bit tristate buffer for signal <out_data<32>> created at line 33
+    Found 1-bit tristate buffer for signal <out_data<33>> created at line 36
+    Found 1-bit tristate buffer for signal <out_data<41>> created at line 37
+    Found 1-bit tristate buffer for signal <out_data<40>> created at line 37
+    Found 1-bit tristate buffer for signal <out_data<39>> created at line 37
+    Found 1-bit tristate buffer for signal <out_data<38>> created at line 37
+    Found 1-bit tristate buffer for signal <out_data<37>> created at line 37
+    Found 1-bit tristate buffer for signal <out_data<36>> created at line 37
+    Found 1-bit tristate buffer for signal <out_data<35>> created at line 37
+    Found 1-bit tristate buffer for signal <out_data<34>> created at line 37
+    Found 1-bit tristate buffer for signal <out_data<42>> created at line 38
+    Found 1-bit tristate buffer for signal <out_data<43>> created at line 39
+    Summary:
+	inferred  44 Tristate(s).
+Unit <tristate_buffer> synthesized.
+
+Synthesizing Unit <Parity>.
+    Related source file is "C:\Users\1\Documents\Xilinx\PCI-UART\Parity.v".
+    Summary:
+Unit <Parity> synthesized.
+
+Synthesizing Unit <shift_regiser44bits>.
+    Related source file is "C:\Users\1\Documents\Xilinx\PCI-UART\shift-regiser44bits.v".
+    Found 6-bit register for signal <workload_reg>.
+    Found 44-bit register for signal <temp>.
+    Found 6-bit subtractor for signal <GND_87_o_GND_87_o_sub_3_OUT<5:0>> created at line 29.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  50 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <shift_regiser44bits> synthesized.
+
+Synthesizing Unit <Comparator>.
+    Related source file is "C:\Users\1\Documents\Xilinx\PCI-UART\Comparator.v".
+    Found 1-bit register for signal <enable_reg>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Comparator> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x1-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 2
+ 6-bit adder                                           : 1
+ 6-bit subtractor                                      : 1
+# Registers                                            : 12
+ 1-bit register                                        : 4
+ 2-bit register                                        : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 1
+ 4-bit register                                        : 1
+ 44-bit register                                       : 1
+ 6-bit register                                        : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 1
+ 20-bit comparator equal                               : 1
+# Multiplexers                                         : 25
+ 1-bit 2-to-1 multiplexer                              : 9
+ 2-bit 2-to-1 multiplexer                              : 8
+ 3-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 2
+ 44-bit 2-to-1 multiplexer                             : 1
+ 6-bit 2-to-1 multiplexer                              : 2
+# Tristates                                            : 81
+ 1-bit tristate buffer                                 : 81
+# Xors                                                 : 4
+ 1-bit xor8                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <data_8> of sequential type is unconnected in block <XLXI_12>.
+WARNING:Xst:2677 - Node <data_9> of sequential type is unconnected in block <XLXI_12>.
+WARNING:Xst:2677 - Node <data_10> of sequential type is unconnected in block <XLXI_12>.
+WARNING:Xst:2677 - Node <data_11> of sequential type is unconnected in block <XLXI_12>.
+
+Synthesizing (advanced) Unit <pci>.
+The following registers are absorbed into counter <address>: 1 register on signal <address>.
+INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <state> prevents it from being combined with the RAM <Mram_state[2]_devsel_Mux_67_o> for implementation as read-only block RAM.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 1-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <state>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_state[2]_devsel_Mux_67_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+Unit <pci> synthesized (advanced).
+
+Synthesizing (advanced) Unit <shift_regiser44bits>.
+The following registers are absorbed into counter <workload_reg>: 1 register on signal <workload_reg>.
+Unit <shift_regiser44bits> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x1-bit single-port distributed Read Only RAM         : 1
+# Counters                                             : 2
+ 6-bit down counter                                    : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 97
+ Flip-Flops                                            : 97
+# Comparators                                          : 1
+ 20-bit comparator equal                               : 1
+# Multiplexers                                         : 22
+ 1-bit 2-to-1 multiplexer                              : 8
+ 2-bit 2-to-1 multiplexer                              : 8
+ 3-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 2
+ 44-bit 2-to-1 multiplexer                             : 1
+# Xors                                                 : 4
+ 1-bit xor8                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <data_8> (without init value) has a constant value of 0 in block <pci>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_20> (without init value) has a constant value of 0 in block <pci>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_21> (without init value) has a constant value of 0 in block <pci>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_22> (without init value) has a constant value of 0 in block <pci>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_23> (without init value) has a constant value of 0 in block <pci>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <data_9> in Unit <pci> is equivalent to the following 2 FFs/Latches, which will be removed : <data_10> <data_11> 
+INFO:Xst:2261 - The FF/Latch <data_24> in Unit <pci> is equivalent to the following 3 FFs/Latches, which will be removed : <data_26> <data_28> <data_31> 
+INFO:Xst:2261 - The FF/Latch <data_25> in Unit <pci> is equivalent to the following 3 FFs/Latches, which will be removed : <data_27> <data_29> <data_30> 
+WARNING:Xst:2042 - Unit e3: 34 internal tristates are replaced by logic (pull-up yes): N2, N3, XLXN_1<0>, XLXN_1<10>, XLXN_1<11>, XLXN_1<12>, XLXN_1<13>, XLXN_1<14>, XLXN_1<15>, XLXN_1<16>, XLXN_1<17>, XLXN_1<18>, XLXN_1<19>, XLXN_1<1>, XLXN_1<20>, XLXN_1<21>, XLXN_1<22>, XLXN_1<23>, XLXN_1<24>, XLXN_1<25>, XLXN_1<26>, XLXN_1<27>, XLXN_1<28>, XLXN_1<29>, XLXN_1<2>, XLXN_1<30>, XLXN_1<31>, XLXN_1<3>, XLXN_1<4>, XLXN_1<5>, XLXN_1<6>, XLXN_1<7>, XLXN_1<8>, XLXN_1<9>.
+WARNING:Xst:2042 - Unit tristate_buffer: 44 internal tristates are replaced by logic (pull-up yes): out_data<0>, out_data<10>, out_data<11>, out_data<12>, out_data<13>, out_data<14>, out_data<15>, out_data<16>, out_data<17>, out_data<18>, out_data<19>, out_data<1>, out_data<20>, out_data<21>, out_data<22>, out_data<23>, out_data<24>, out_data<25>, out_data<26>, out_data<27>, out_data<28>, out_data<29>, out_data<2>, out_data<30>, out_data<31>, out_data<32>, out_data<33>, out_data<34>, out_data<35>, out_data<36>, out_data<37>, out_data<38>, out_data<39>, out_data<3>, out_data<40>, out_data<41>, out_data<42>, out_data<43>, out_data<4>, out_data<5>, out_data<6>, out_data<7>, out_data<8>, out_data<9>.
+
+Optimizing unit <e3> ...
+
+Optimizing unit <tristate_buffer> ...
+
+Optimizing unit <shift_regiser44bits> ...
+WARNING:Xst:2677 - Node <XLXI_12/data_9> of sequential type is unconnected in block <e3>.
+WARNING:Xst:1710 - FF/Latch <XLXI_12/data_12> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/data_7> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/data_6> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/data_5> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/data_4> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/data_3> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/data_2> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/data_1> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/data_0> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/state_2> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/state_0> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/led_3> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/led_2> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/led_1> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/led_0> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/memen> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/reset_clk_DFF_15> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/devsel> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/baseaddr_7> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/baseaddr_6> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/baseaddr_5> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/baseaddr_4> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/baseaddr_3> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/baseaddr_2> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/baseaddr_1> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/baseaddr_0> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/enable_1> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/enable_0> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/data_25> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/data_24> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/data_19> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/data_18> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/data_17> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/data_16> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/data_15> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/data_14> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_12/data_13> (without init value) has a constant value of 0 in block <e3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <XLXI_12/address_5> of sequential type is unconnected in block <e3>.
+WARNING:Xst:2677 - Node <XLXI_12/address_4> of sequential type is unconnected in block <e3>.
+WARNING:Xst:2677 - Node <XLXI_12/address_3> of sequential type is unconnected in block <e3>.
+WARNING:Xst:2677 - Node <XLXI_12/address_2> of sequential type is unconnected in block <e3>.
+WARNING:Xst:2677 - Node <XLXI_12/address_1> of sequential type is unconnected in block <e3>.
+WARNING:Xst:2677 - Node <XLXI_12/address_0> of sequential type is unconnected in block <e3>.
+WARNING:Xst:2677 - Node <XLXI_12/state_1> of sequential type is unconnected in block <e3>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block e3, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 51
+ Flip-Flops                                            : 51
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : e3.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 56
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 32
+#      LUT3                        : 6
+#      LUT4                        : 8
+#      LUT6                        : 7
+#      VCC                         : 1
+# FlipFlops/Latches                : 51
+#      FD                          : 50
+#      FDR                         : 1
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 12
+#      IBUF                        : 2
+#      OBUF                        : 5
+#      OBUFT                       : 5
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16ftg256-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              51  out of  18224     0%  
+ Number of Slice LUTs:                   54  out of   9112     0%  
+    Number used as Logic:                54  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     54
+   Number with an unused Flip Flop:       3  out of     54     5%  
+   Number with an unused LUT:             0  out of     54     0%  
+   Number of fully used LUT-FF pairs:    51  out of     54    94%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          28
+ Number of bonded IOBs:                  14  out of    186     7%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+PCI_CLK                            | BUFGP                  | 1     |
+UART_CLK                           | BUFGP                  | 50    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.077ns (Maximum Frequency: 325.039MHz)
+   Minimum input arrival time before clock: 2.441ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UART_CLK'
+  Clock period: 3.077ns (frequency: 325.039MHz)
+  Total number of paths / destination ports: 338 / 50
+-------------------------------------------------------------------------
+Delay:               3.077ns (Levels of Logic = 2)
+  Source:            XLXI_15/workload_reg_5 (FF)
+  Destination:       XLXI_15/temp_41 (FF)
+  Source Clock:      UART_CLK rising
+  Destination Clock: UART_CLK rising
+
+  Data Path: XLXI_15/workload_reg_5 to XLXI_15/temp_41
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.447   1.138  XLXI_15/workload_reg_5 (XLXI_15/workload_reg_5)
+     LUT6:I0->O           15   0.203   0.982  XLXI_15/Mmux_GND_87_o_in_data[43]_mux_3_OUT1101 (XLXI_15/Mmux_GND_87_o_in_data[43]_mux_3_OUT110)
+     LUT2:I1->O            1   0.205   0.000  XLXI_15/Mmux_GND_87_o_in_data[43]_mux_3_OUT431 (XLXI_15/GND_87_o_in_data[43]_mux_3_OUT<8>)
+     FD:D                      0.102          XLXI_15/temp_8
+    ----------------------------------------
+    Total                      3.077ns (0.957ns logic, 2.120ns route)
+                                       (31.1% logic, 68.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UART_CLK'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.441ns (Levels of Logic = 2)
+  Source:            START_BITS<0> (PAD)
+  Destination:       XLXI_15/temp_33 (FF)
+  Destination Clock: UART_CLK rising
+
+  Data Path: START_BITS<0> to XLXI_15/temp_33
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.222   0.912  START_BITS_0_IBUF (START_BITS_0_IBUF)
+     LUT4:I1->O            1   0.205   0.000  XLXI_15/Mmux_GND_87_o_in_data[43]_mux_3_OUT271 (XLXI_15/GND_87_o_in_data[43]_mux_3_OUT<33>)
+     FD:D                      0.102          XLXI_15/temp_33
+    ----------------------------------------
+    Total                      2.441ns (1.529ns logic, 0.912ns route)
+                                       (62.6% logic, 37.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'UART_CLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            XLXI_15/temp_0 (FF)
+  Destination:       UART_OUT (PAD)
+  Source Clock:      UART_CLK rising
+
+  Data Path: XLXI_15/temp_0 to UART_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.579  XLXI_15/temp_0 (XLXI_15/temp_0)
+     OBUF:I->O                 2.571          UART_OUT_OBUF (UART_OUT)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock PCI_CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+UART_CLK       |    2.190|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UART_CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+PCI_CLK        |    1.908|         |         |         |
+UART_CLK       |    3.077|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 19.56 secs
+ 
+--> 
+
+Total memory usage is 247532 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   90 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

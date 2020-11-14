@@ -1,0 +1,10 @@
+vhdtdtfi -lib work C:/Users/1/Documents/Xilinx/PCI-UART/z-statebuffer-44bit.v -lang verilog -prj PCI-UART -o tristate_buffer.spl -module tristate_buffer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 tristate_buffer.spl C:/Users/1/Documents/Xilinx/PCI-UART/tristate_buffer.sym 
+vhdtdtfi -lib work C:/Users/1/Documents/Xilinx/PCI-UART/z-statebuffer-44bit.v -lang verilog -prj PCI-UART -o tristate_buffer.spl -module tristate_buffer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 tristate_buffer.spl C:/Users/1/Documents/Xilinx/PCI-UART/tristate_buffer.sym 
+vhdtdtfi -lib work C:/Users/1/Documents/Xilinx/PCI-UART/z-statebuffer-44bit.v -lang verilog -prj PCI-UART -o tristate_buffer.spl -module tristate_buffer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 tristate_buffer.spl C:/Users/1/Documents/Xilinx/PCI-UART/tristate_buffer.sym 
+vhdtdtfi -lib work C:/Users/1/Documents/Xilinx/PCI-UART/z-statebuffer-44bit.v -lang verilog -prj PCI-UART -o tristate_buffer.spl -module tristate_buffer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 tristate_buffer.spl C:/Users/1/Documents/Xilinx/PCI-UART/tristate_buffer.sym 
+vhdtdtfi -lib work C:/Users/1/Documents/Xilinx/PCI-UART/z-statebuffer-44bit.v -lang verilog -prj PCI-UART -o tristate_buffer.spl -module tristate_buffer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 tristate_buffer.spl C:/Users/1/Documents/Xilinx/PCI-UART/tristate_buffer.sym 

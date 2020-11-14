@@ -1,0 +1,28 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/1/Documents/Xilinx/PCI-UART/e3_isim_beh.exe -prj C:/Users/1/Documents/Xilinx/PCI-UART/e3_beh.prj work.e3 work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/1/Documents/Xilinx/PCI-UART/z-statebuffer-44bit.v" into library work
+Analyzing Verilog file "C:/Users/1/Documents/Xilinx/PCI-UART/shift-regiser44bits.v" into library work
+WARNING:HDLCompiler:98 - "C:/Users/1/Documents/Xilinx/PCI-UART/shift-regiser44bits.v" Line 14: workload was previously declared with a range
+Analyzing Verilog file "C:/Users/1/Documents/Xilinx/PCI-UART/PCI-CORE.v" into library work
+Analyzing Verilog file "C:/Users/1/Documents/Xilinx/PCI-UART/Parity.v" into library work
+Analyzing Verilog file "C:/Users/1/Documents/Xilinx/PCI-UART/Comparator.v" into library work
+Analyzing Verilog file "C:/Users/1/Documents/Xilinx/PCI-UART/e3.vf" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/1/Documents/Xilinx/PCI-UART/e3.vf" Line 89: Size mismatch in connection of port <workload>. Formal port size is 1-bit while actual signal size is 6-bit.
+Completed static elaboration
+Fuse Memory Usage: 193156 KB
+Fuse CPU Usage: 577 ms
+Compiling module pci
+Compiling module tristate_buffer
+Compiling module Parity
+Compiling module shift_regiser44bits
+Compiling module Comparator
+Compiling module e3
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+ERROR:Simulator:861 - Failed to link the design

@@ -1,0 +1,6 @@
+vhdtdtfi -lib work C:/Users/1/Documents/Xilinx/PCI-UART/PCI-CORE.v -lang verilog -prj PCI-UART -o pci.spl -module pci -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 pci.spl C:/Users/1/Documents/Xilinx/PCI-UART/pci.sym 
+vhdtdtfi -lib work C:/Users/1/Documents/Xilinx/PCI-UART/PCI-CORE.v -lang verilog -prj PCI-UART -o pci.spl -module pci -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 pci.spl C:/Users/1/Documents/Xilinx/PCI-UART/pci.sym 
+vhdtdtfi -lib work C:/Users/1/Documents/Xilinx/PCI-UART/PCI-CORE.v -lang verilog -prj PCI-UART -o pci.spl -module pci -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 pci.spl C:/Users/1/Documents/Xilinx/PCI-UART/pci.sym 

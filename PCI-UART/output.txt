@@ -1,0 +1,7 @@
+Storage Target: SPI Flash Single FPGA
+Auto Select Storage Device
+FF
+Untitled
+C:\Users\1\Documents\Xilinx\PCI-UART\
+
+MCS

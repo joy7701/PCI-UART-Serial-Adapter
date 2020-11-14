@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\1\Documents\Xilinx\PCI-UART\e3.ncd
+OUTFILE=C:\Users\1\Documents\Xilinx\PCI-UART\e3.bit
+FAMILY=Spartan6
+PART=xc6slx16-3ftg256
+WORKINGDIR=C:\Users\1\Documents\Xilinx\PCI-UART
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\1\Documents\Xilinx\PCI-UART\impact.xsl
+OUTFILE=C:\Users\1\Documents\Xilinx\PCI-UART\impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=C:\Users\1\Documents\Xilinx\PCI-UART
+LICENSE=iMPACT
+USER_INFO=iMPACT

@@ -1,0 +1,32 @@
+sch2hdl -intstyle ise -family spartan6 -verilog e3_drc.vf -w C:/Users/1/Documents/Xilinx/PCI-UART/e3.sch 
+xst -intstyle ise -ifn "C:/Users/1/Documents/Xilinx/PCI-UART/e3.xst" -ofn "C:/Users/1/Documents/Xilinx/PCI-UART/e3.syr" 
+xst -intstyle ise -ifn "C:/Users/1/Documents/Xilinx/PCI-UART/e3.xst" -ofn "C:/Users/1/Documents/Xilinx/PCI-UART/e3.syr" 
+xst -intstyle ise -ifn "C:/Users/1/Documents/Xilinx/PCI-UART/e3.xst" -ofn "C:/Users/1/Documents/Xilinx/PCI-UART/e3.syr" 
+xst -intstyle ise -ifn "C:/Users/1/Documents/Xilinx/PCI-UART/e3.xst" -ofn "C:/Users/1/Documents/Xilinx/PCI-UART/e3.syr" 
+xst -intstyle ise -ifn "C:/Users/1/Documents/Xilinx/PCI-UART/e3.xst" -ofn "C:/Users/1/Documents/Xilinx/PCI-UART/e3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 e3.ngc e3.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o e3_map.ncd e3.ngd e3.pcf 
+par -w -intstyle ise -ol high -mt off e3_map.ncd e3.ncd e3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml e3.twx e3.ncd -o e3.twr e3.pcf 
+xst -intstyle ise -ifn "C:/Users/1/Documents/Xilinx/PCI-UART/e3.xst" -ofn "C:/Users/1/Documents/Xilinx/PCI-UART/e3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 e3.ngc e3.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o e3_map.ncd e3.ngd e3.pcf 
+par -w -intstyle ise -ol high -mt off e3_map.ncd e3.ncd e3.pcf 
+xst -intstyle ise -ifn "C:/Users/1/Documents/Xilinx/PCI-UART/e3.xst" -ofn "C:/Users/1/Documents/Xilinx/PCI-UART/e3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 e3.ngc e3.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o e3_map.ncd e3.ngd e3.pcf 
+par -w -intstyle ise -ol high -mt off e3_map.ncd e3.ncd e3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml e3.twx e3.ncd -o e3.twr e3.pcf 
+bitgen -intstyle ise -f e3.ut e3.ncd 
+xst -intstyle ise -ifn "C:/Users/1/Documents/Xilinx/PCI-UART/e3.xst" -ofn "C:/Users/1/Documents/Xilinx/PCI-UART/e3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 e3.ngc e3.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o e3_map.ncd e3.ngd e3.pcf 
+par -w -intstyle ise -ol high -mt off e3_map.ncd e3.ncd e3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml e3.twx e3.ncd -o e3.twr e3.pcf 
+bitgen -intstyle ise -f e3.ut e3.ncd 
+xst -intstyle ise -ifn "C:/Users/1/Documents/Xilinx/PCI-UART/e3.xst" -ofn "C:/Users/1/Documents/Xilinx/PCI-UART/e3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-ftg256-3 e3.ngc e3.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o e3_map.ncd e3.ngd e3.pcf 
+par -w -intstyle ise -ol high -mt off e3_map.ncd e3.ncd e3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml e3.twx e3.ncd -o e3.twr e3.pcf 
+bitgen -intstyle ise -f e3.ut e3.ncd 

@@ -1,0 +1,12 @@
+[Inputs]
+enable
+=in_data[31:0]=
+=start_bits[3:0]=
+=stop_bits[3:0]=
+=parities[3:0]=
+[Outputs]
+=out_data[43:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel tristate_buffer
+

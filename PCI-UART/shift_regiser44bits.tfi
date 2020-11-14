@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+shift_regiser44bits instance_name (
+    .in_data(in_data), 
+    .clk(clk), 
+    .out_data(out_data), 
+    .workload(workload)
+    );
+
+

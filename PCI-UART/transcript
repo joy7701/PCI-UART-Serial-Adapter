@@ -1,0 +1,329 @@
+# Reading C:/Modeltech_pe_edu_10.4a/tcl/vsim/pref.tcl
+# do {e3_e3_sch_tb.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:05:23 on Jun 02,2019
+# vlog -reportprogress 300 z-statebuffer-44bit.v 
+# -- Compiling module tristate_buffer
+# 
+# Top level modules:
+# 	tristate_buffer
+# End time: 13:05:25 on Jun 02,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:05:25 on Jun 02,2019
+# vlog -reportprogress 300 shift-regiser44bits.v 
+# -- Compiling module shift_regiser44bits
+# ** Error: shift-regiser44bits.v(14): Declaration for 'workload' incompatible with earlier vectored declaration at shift-regiser44bits.v(12).
+# End time: 13:05:25 on Jun 02,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/Modeltech_pe_edu_10.4a/win32pe_edu/vlog failed.
+# Error in macro ./e3_e3_sch_tb.fdo line 24
+# C:/Modeltech_pe_edu_10.4a/win32pe_edu/vlog failed.
+#     while executing
+# "vlog  "shift-regiser44bits.v""
+vsim -gui -do {do {e3_e3_sch_tb.fdo}} work.e3_e3_sch_tb
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -gui -do "do {e3_e3_sch_tb.fdo}" 
+# Start time: 13:07:46 on Jun 02,2019
+# Loading work.e3_e3_sch_tb
+# Loading work.e3
+# Loading work.pci
+# Loading work.tristate_buffer
+# Loading work.Parity
+# ** Error: (vsim-3033) C:/Users/1/Documents/Xilinx/PCI-UART/e3.v(86): Instantiation of 'shift_regiser44bits' failed. The design unit was not found.
+#    Time: 0 ns  Iteration: 0  Instance: /e3_e3_sch_tb/UUT File: C:/Users/1/Documents/Xilinx/PCI-UART/e3.v
+#         Searched libraries:
+#             C:/Users/1/Documents/Xilinx/PCI-UART/work
+# Loading work.Comparator
+# Error loading design
+vmap work C:/Users/1/Documents/Xilinx/PCI-UART/work
+# Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
+# vmap -modelsim_quiet work C:/Users/1/Documents/Xilinx/PCI-UART/work 
+# ** Error: (vmap-20) Cannot access for writing file "C:\Modeltech_pe_edu_10.4a\modelsim.ini".
+# 
+# Permission denied. (errno = EACCES)
+# ** Warning: modelsim.ini and default modelsim.ini are the same file
+vmap -del work
+# Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
+# vmap -modelsim_quiet -del work 
+# No mapping found for library work
+vmap work C:/Users/1/Documents/Xilinx/PCI-UART/work
+# Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
+# vmap -modelsim_quiet work C:/Users/1/Documents/Xilinx/PCI-UART/work 
+# ** Error: (vmap-20) Cannot access for writing file "C:\Modeltech_pe_edu_10.4a\modelsim.ini".
+# 
+# Permission denied. (errno = EACCES)
+# ** Warning: modelsim.ini and default modelsim.ini are the same file
+vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/shift-regiser44bits.v
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:09:06 on Jun 02,2019
+# vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/shift-regiser44bits.v 
+# -- Compiling module shift_regiser44bits
+# ** Error: C:/Users/1/Documents/Xilinx/PCI-UART/shift-regiser44bits.v(14): Declaration for 'workload' incompatible with earlier vectored declaration at C:/Users/1/Documents/Xilinx/PCI-UART/shift-regiser44bits.v(12).
+# End time: 13:09:06 on Jun 02,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/z-statebuffer-44bit.v
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:09:06 on Jun 02,2019
+# vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/z-statebuffer-44bit.v 
+# -- Compiling module tristate_buffer
+# 
+# Top level modules:
+# 	tristate_buffer
+# End time: 13:09:06 on Jun 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -do {do {e3_e3_sch_tb.fdo}} work.e3_e3_sch_tb
+# vsim 
+# Start time: 13:09:29 on Jun 02,2019
+# Loading work.e3_e3_sch_tb
+# Loading work.e3
+# Loading work.pci
+# Loading work.tristate_buffer
+# Loading work.Parity
+# ** Error: (vsim-3033) C:/Users/1/Documents/Xilinx/PCI-UART/e3.v(86): Instantiation of 'shift_regiser44bits' failed. The design unit was not found.
+#    Time: 0 ns  Iteration: 0  Instance: /e3_e3_sch_tb/UUT File: C:/Users/1/Documents/Xilinx/PCI-UART/e3.v
+#         Searched libraries:
+#             C:/Users/1/Documents/Xilinx/PCI-UART/work
+# Loading work.Comparator
+# Error loading design
+vsim -gui -do {do {e3_e3_sch_tb.fdo}} work.e3
+# vsim 
+# Start time: 13:09:51 on Jun 02,2019
+# Loading work.e3
+# Loading work.pci
+# Loading work.tristate_buffer
+# Loading work.Parity
+# ** Error: (vsim-3033) C:/Users/1/Documents/Xilinx/PCI-UART/e3.v(86): Instantiation of 'shift_regiser44bits' failed. The design unit was not found.
+#    Time: 0 ns  Iteration: 0  Instance: /e3 File: C:/Users/1/Documents/Xilinx/PCI-UART/e3.v
+#         Searched libraries:
+#             C:/Users/1/Documents/Xilinx/PCI-UART/work
+# Loading work.Comparator
+# Error loading design
+cd C:/Users/1/Documents/Xilinx/PCI-UART
+vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/Comparator.v
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:10:55 on Jun 02,2019
+# vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/Comparator.v 
+# -- Compiling module Comparator
+# 
+# Top level modules:
+# 	Comparator
+# End time: 13:10:56 on Jun 02,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/e3.v
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:10:56 on Jun 02,2019
+# vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/e3.v 
+# -- Compiling module e3
+# 
+# Top level modules:
+# 	e3
+# End time: 13:10:56 on Jun 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/Parity.v
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:10:56 on Jun 02,2019
+# vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/Parity.v 
+# -- Compiling module Parity
+# 
+# Top level modules:
+# 	Parity
+# End time: 13:10:56 on Jun 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/PCI-CORE.v
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:10:56 on Jun 02,2019
+# vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/PCI-CORE.v 
+# -- Compiling module pci
+# 
+# Top level modules:
+# 	pci
+# End time: 13:10:57 on Jun 02,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/shift-regiser44bits.v
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:10:57 on Jun 02,2019
+# vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/shift-regiser44bits.v 
+# -- Compiling module shift_regiser44bits
+# ** Error: C:/Users/1/Documents/Xilinx/PCI-UART/shift-regiser44bits.v(14): Declaration for 'workload' incompatible with earlier vectored declaration at C:/Users/1/Documents/Xilinx/PCI-UART/shift-regiser44bits.v(12).
+# End time: 13:10:57 on Jun 02,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/testbench.v
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:10:57 on Jun 02,2019
+# vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/testbench.v 
+# -- Compiling module e3_e3_sch_tb
+# 
+# Top level modules:
+# 	e3_e3_sch_tb
+# End time: 13:10:57 on Jun 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/testbench1.v
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:10:57 on Jun 02,2019
+# vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/testbench1.v 
+# ** Error: C:/Users/1/Documents/Xilinx/PCI-UART/testbench1.v(3): Error in the specified time literal value of 5. Expected value of 1, 10, or 100.
+# ** Error: C:/Users/1/Documents/Xilinx/PCI-UART/testbench1.v(3): Error in the specified time literal value of 5. Expected value of 1, 10, or 100.
+# -- Compiling module e3_e3_sch_tb
+# End time: 13:10:57 on Jun 02,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/z-statebuffer-44bit.v
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:10:58 on Jun 02,2019
+# vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/z-statebuffer-44bit.v 
+# -- Compiling module tristate_buffer
+# 
+# Top level modules:
+# 	tristate_buffer
+# End time: 13:10:58 on Jun 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/Comparator.v
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:11:19 on Jun 02,2019
+# vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/Comparator.v 
+# -- Compiling module Comparator
+# 
+# Top level modules:
+# 	Comparator
+# End time: 13:11:19 on Jun 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/e3.v
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:11:19 on Jun 02,2019
+# vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/e3.v 
+# -- Compiling module e3
+# 
+# Top level modules:
+# 	e3
+# End time: 13:11:19 on Jun 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/Parity.v
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:11:19 on Jun 02,2019
+# vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/Parity.v 
+# -- Compiling module Parity
+# 
+# Top level modules:
+# 	Parity
+# End time: 13:11:19 on Jun 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/PCI-CORE.v
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:11:20 on Jun 02,2019
+# vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/PCI-CORE.v 
+# -- Compiling module pci
+# 
+# Top level modules:
+# 	pci
+# End time: 13:11:20 on Jun 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/shift-regiser44bits.v
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:11:20 on Jun 02,2019
+# vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/shift-regiser44bits.v 
+# -- Compiling module shift_regiser44bits
+# ** Error: C:/Users/1/Documents/Xilinx/PCI-UART/shift-regiser44bits.v(14): Declaration for 'workload' incompatible with earlier vectored declaration at C:/Users/1/Documents/Xilinx/PCI-UART/shift-regiser44bits.v(12).
+# End time: 13:11:20 on Jun 02,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/testbench.v
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:11:20 on Jun 02,2019
+# vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/testbench.v 
+# -- Compiling module e3_e3_sch_tb
+# 
+# Top level modules:
+# 	e3_e3_sch_tb
+# End time: 13:11:20 on Jun 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/z-statebuffer-44bit.v
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:11:20 on Jun 02,2019
+# vlog -reportprogress 300 -work work C:/Users/1/Documents/Xilinx/PCI-UART/z-statebuffer-44bit.v 
+# -- Compiling module tristate_buffer
+# 
+# Top level modules:
+# 	tristate_buffer
+# End time: 13:11:20 on Jun 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -do {do {e3_e3_sch_tb.fdo}} work.e3_e3_sch_tb
+# vsim 
+# Start time: 13:11:41 on Jun 02,2019
+# Loading work.e3_e3_sch_tb
+# Loading work.e3
+# Loading work.pci
+# Loading work.tristate_buffer
+# Loading work.Parity
+# ** Error: (vsim-3033) C:/Users/1/Documents/Xilinx/PCI-UART/e3.v(86): Instantiation of 'shift_regiser44bits' failed. The design unit was not found.
+#    Time: 0 ns  Iteration: 0  Instance: /e3_e3_sch_tb/UUT File: C:/Users/1/Documents/Xilinx/PCI-UART/e3.v
+#         Searched libraries:
+#             C:/Users/1/Documents/Xilinx/PCI-UART/work
+# Loading work.Comparator
+# Error loading design
+vlog -work C:/Users/1/Documents/Xilinx/PCI-UART/work -refresh -force_refresh
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:12:01 on Jun 02,2019
+# vlog -reportprogress 300 -work C:/Users/1/Documents/Xilinx/PCI-UART/work -refresh -force_refresh 
+# -- Refreshing module Comparator
+# -- Refreshing module e3
+# -- Refreshing module e3_e3_sch_tb
+# -- Refreshing module Parity
+# -- Refreshing module pci
+# -- Refreshing module tristate_buffer
+# End time: 13:12:01 on Jun 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work C:/Users/1/Documents/Xilinx/PCI-UART/work -refresh -force_refresh
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 13:12:02 on Jun 02,2019
+# vcom -reportprogress 300 -work C:/Users/1/Documents/Xilinx/PCI-UART/work -refresh -force_refresh 
+# -- Skipping module Comparator
+# -- Skipping module e3
+# -- Skipping module e3_e3_sch_tb
+# -- Skipping module Parity
+# -- Skipping module pci
+# -- Skipping module tristate_buffer
+# End time: 13:12:03 on Jun 02,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vmap work C:/Users/1/Documents/Xilinx/PCI-UART/work
+# Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
+# vmap -modelsim_quiet work C:/Users/1/Documents/Xilinx/PCI-UART/work 
+# ** Error: (vmap-20) Cannot access for writing file "C:\Modeltech_pe_edu_10.4a\modelsim.ini".
+# 
+# Permission denied. (errno = EACCES)
+# ** Warning: modelsim.ini and default modelsim.ini are the same file
+vmap -del work
+# Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
+# vmap -modelsim_quiet -del work 
+# No mapping found for library work
+vmap work C:/Users/1/Documents/Xilinx/PCI-UART/work
+# Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
+# vmap -modelsim_quiet work C:/Users/1/Documents/Xilinx/PCI-UART/work 
+# ** Error: (vmap-20) Cannot access for writing file "C:\Modeltech_pe_edu_10.4a\modelsim.ini".
+# 
+# Permission denied. (errno = EACCES)
+# ** Warning: modelsim.ini and default modelsim.ini are the same file
+vmap work C:/Users/1/Documents/Xilinx/PCI-UART/work
+# Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
+# vmap -modelsim_quiet work C:/Users/1/Documents/Xilinx/PCI-UART/work 
+# ** Error: (vmap-20) Cannot access for writing file "C:\Modeltech_pe_edu_10.4a\modelsim.ini".
+# 
+# Permission denied. (errno = EACCES)
+# ** Warning: modelsim.ini and default modelsim.ini are the same file

@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\Users\1\Documents\Xilinx\PCI-UART\//Untitled -s 4096 -u 0000 C:/Users/1/Documents/Xilinx/PCI-UART/e3.bit -spi 
+
+PROM C:\Users\1\Documents\Xilinx\PCI-UART\Untitled.prm map: Fri Nov 29 17:29:34 2019
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          4096K
+PROM start    0000:0000
+PROM end      003f:ffff
+PROM checksum 38b7b282
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0007:1543     Nov 29 17:14:45 2019 C:/Users/1/Documents/Xilinx/PCI-UART/e3.bit

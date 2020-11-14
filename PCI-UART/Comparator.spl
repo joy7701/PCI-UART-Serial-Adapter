@@ -1,0 +1,10 @@
+[Inputs]
+clk
+=state[2:0]=
+=workload[5:0]=
+[Outputs]
+enable
+[BiDir]
+[ATTRIBUTES]
+VeriModel Comparator
+

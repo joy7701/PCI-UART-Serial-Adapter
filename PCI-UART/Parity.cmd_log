@@ -1,0 +1,4 @@
+vhdtdtfi -lib work C:/Users/1/Documents/Xilinx/PCI-UART/Parity.v -lang verilog -prj PCI-UART -o Parity.spl -module Parity -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Parity.spl C:/Users/1/Documents/Xilinx/PCI-UART/Parity.sym 
+vhdtdtfi -lib work C:/Users/1/Documents/Xilinx/PCI-UART/Parity.v -lang verilog -prj PCI-UART -o Parity.spl -module Parity -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Parity.spl C:/Users/1/Documents/Xilinx/PCI-UART/Parity.sym 

@@ -1,0 +1,20 @@
+[Inputs]
+reset
+clk
+frame
+irdy
+idsel
+=cbe[3:0]=
+[Outputs]
+trdy
+devsel
+stop
+inta
+=led_out[3:0]=
+=enable_transaction[2:0]=
+[BiDir]
+par
+=ad[31:0]=
+[ATTRIBUTES]
+VeriModel pci
+

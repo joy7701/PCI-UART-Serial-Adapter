@@ -1,0 +1,6 @@
+verilog work "z-statebuffer-44bit.v"
+verilog work "shift-regiser44bits.v"
+verilog work "PCI-CORE.v"
+verilog work "Parity.v"
+verilog work "Comparator.v"
+verilog work "e3.vf"

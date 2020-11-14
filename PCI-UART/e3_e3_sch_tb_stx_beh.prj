@@ -1,0 +1,8 @@
+verilog isim_temp "z-statebuffer-44bit.v"
+verilog isim_temp "shift-regiser44bits.v"
+verilog isim_temp "PCI-CORE.v"
+verilog isim_temp "Parity.v"
+verilog isim_temp "Comparator.v"
+verilog isim_temp "e3.vf"
+verilog isim_temp "testbench.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
